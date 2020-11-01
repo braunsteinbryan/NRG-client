@@ -13,6 +13,7 @@ $(() => {
   $('#sign-in-form').on('submit', authEvents.onSignIn)
   $('#sign-up-form').on('submit', authEvents.onSignUp)
   $('#add-to-favorites').on('submit', favoritesSelectionEvents.onAddToFavorites)
+  $('body').on('click', favoritesSelectionEvents.resetAddToFavoritesForm)
   $('#show-favorites').on('click', favoritesSelectionEvents.onShowFavorites)
   $('#show-local-drinks').on('click', favoritesSelectionEvents.onShowLocalDrinks)
   $('#favorites-list').on('click', '#update-button', favoritesSelectionEvents.showUpdateForm)

@@ -18,6 +18,10 @@ const onAddToFavorites = function (event) {
     .catch(ui.onAddAFavoriteFailure)
 }
 
+const resetAddToFavoritesForm = function (event) {
+  document.forms[3].reset()
+}
+
 const onShowFavorites = function () {
   api.showFavorites()
 
@@ -104,5 +108,6 @@ module.exports = {
   onUpdateFavorites: onUpdateFavorites,
   showUpdateForm: showUpdateForm,
   onDeleteFavorite: onDeleteFavorite,
-  switchForms: switchForms
+  switchForms: switchForms,
+  resetAddToFavoritesForm: resetAddToFavoritesForm
 }
