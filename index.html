@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>ENERGY DRINK APP</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,150 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+
+      <!-- <div class="wrapper active-element"> -->
+        <header class="main-header">
+            <nav>
+                <div class="masthead active-element">
+                    <h1></h1>
+                    <div id="menu-toggle" class="menu-toggle active-element">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
+                <div class="main-nav-list active-element">
+                    <ul>
+                        <li><a href="#0">Sign Up</a></li>
+                        <li><a href="#0">Sign In</a></li>
+                        <li><a href="#0">Change Password</a></li>
+                        <li><a href="#0" class="active-link">Sign Out</a></li>
+                        <li><a href="#0">Choose New Favorites</a></li>
+                        <li><a href="#0" id="show-favorites">See Existing Favorites</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <h1 id='page-title'>MONSTER ENERGY DRINK APP</h1>
+<div class='container'>
+        <!-- <div id='nav'>
+          <ul>
+          <li>➚ Change Password</li>
+          <li>➚ Sign Out</li>
+          <li>➚ Add A Favorite</li>
+          <li>➚ View Existing Favorites</li>
+        </ul>
+      </div> -->
+<div id="my-drinks"></div>
+</div>
+  <main class="main-contents">
+      <!-- <section class="align-auth-events"> -->
+  <div id='sign-up'>
+    <form id="sign-up-form">
+      <fieldset>
+        <legend id='sign-up-legend'>Sign Up!</legend>
+            <label for="sign-up-email">Email</label>
+            <br />
+            <input id="sign-up-email" name="credentials[email]" type="email" placeholder="Enter Email">
+            <br />
+            <label for="sign-up-password">Password</label>
+            <br />
+            <input id="sign-up-password" name="credentials[password]" type="password" placeholder="Enter Password">
+            <br />
+            <label for="sign-up-password_confirmation">Password Confirmation</label>
+            <br />
+            <input id="sign-up-password_confirmation" name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
+            <br />
+        <input class='form-buttons' type="submit" value="Sign up"> <a id='switch-to-sign-in-link' href=#>Click Here To Sign In</a>
+      </fieldset>
+    </form>
+</div>
+  <form id="sign-in-form">
+    <fieldset>
+      <legend id='sign-in-legend'>Sign in!</legend>
+
+          <label for="sign-in-email">Email</label>
+          <br />
+          <input id="sign-in-email" name="credentials[email]" type="email" placeholder="Enter Email">
+          <br />
+          <label for="sign-in-password">Password</label>
+          <br />
+          <input id="sign-in-password" name="credentials[password]" type="password" placeholder="Enter Password">
+          <br />
+        <input class='form-buttons' type="submit" value="Sign In"> <a id='switch-to-sign-up-link' href=#>Click Here To Sign Up</a>
+    </fieldset>
+  </form>
+
+
+
+
+
+
+
+<div id='assets-tobe-brought-back'>
+
+<div class='indiv-auth-events'>
+  <form id="change-password-form">
+    <fieldset>
+    <legend>Change Password!</legend>
+      <div>
+        <label for="old-password">Old Password</label>
+      </div>
+      <div>
+        <input id="old-password" name="passwords[old]" type="password" placeholder="Old Password">
+      </div>
+      <div>
+        <label for="new-password">New Password</label>
+      </div>
+      <div>
+        <input id="new-password" name="passwords[new]" type="password" placeholder="New Password">
+      </div>
+      <input type="submit" value="Change Password">
+    </fieldset>
+  </form>
+</div>
+
+<div class='sign-out-link'>
+  <a href="#" id="sign-out-link">Sign Out!</a>
+</div>
+<!-- </section> -->
+            <h6>Let's see all of the drinks!</h6>
+              <button id="show-local-drinks">Show!</button>
+              <button id='hide-drinks'>Hide</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+      <form id="add-to-favorites">
+        <fieldset>
+          <legend>Make a selection for your favorite!</legend>
+
+              <label>Selection</label>
+
+              <input id="selection" name="selection[id]" type="number" min=1 max=5 placeholder="Favorite goes here" />
+
+            <input type="submit" value="Go">
+        </fieldset>
+      </form>
+
+
+      <h6>Let's see those favorites!</h6>
+
+        <button>Here are your Favorites!</button>
+        <div id='favorites-list'></div>
+<p id='message'></p>
+
+
+
+        </main>
+      <!-- </div> -->
+
     </body>
 </html>
