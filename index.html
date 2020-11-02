@@ -31,7 +31,7 @@
                         <li><a href="#0">Change Password</a></li>
                         <li><a href="#0" class="active-link">Sign Out</a></li>
                         <li><a href="#0">Choose New Favorites</a></li>
-                        <li><a href="#0" id="show-favorites">See Existing Favorites</a></li>
+                        <li><a href="#0">See Existing Favorites</a></li>
                     </ul>
                 </div>
             </nav>
@@ -131,25 +131,26 @@
 
 
 
-
+      <div class='container'>
 
       <form id="add-to-favorites">
         <fieldset>
-          <legend>Make a selection for your favorite!</legend>
+          <legend id='fav-list-legend'>Make a selection for your favorite!</legend>
 
-              <label>Selection</label>
+              <label>Selection:</label>
 
-              <input id="selection" name="selection[id]" type="number" min=1 max=5 placeholder="Favorite goes here" />
+              <input id="selection" name="selection[id]" type="number" min=1 max=5 placeholder="Favorite # goes here" />
 
             <input type="submit" value="Go">
         </fieldset>
       </form>
-
-
       <h6>Let's see those favorites!</h6>
-
-        <button>Here are your Favorites!</button>
+        <button id="show-favorites">Here are your Favorites!</button>
         <div id='favorites-list'></div>
+
+      </div>
+
+
 <p id='message'></p>
 
 

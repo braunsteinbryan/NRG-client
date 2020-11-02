@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap', url(https://fonts.googleapis.com/css?family=Jolly+Lodger);
 
+#add-to-favorites {
+  font-size: 30px;
+}
+
 #my-drinks,
 #sign-up,
 #sign-in-form,
@@ -26,12 +30,13 @@
 }
 
 #sign-up-legend,
-#sign-in-legend {
+#sign-in-legend,
+#fav-list-legend {
   font-size: 50px;
 }
 
 #selection {
-  width: 170px;
+  width: 207px;
 }
 
 body {
