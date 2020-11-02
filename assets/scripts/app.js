@@ -23,4 +23,7 @@ $(() => {
   $('#sign-in-form').hide()
   $('#nav').hide()
   $('#assets-tobe-brought-back').hide()
+  $('.container').hide()
+  $('#show-favorites').hide()
+  $('#favorites-list').hide()
 })

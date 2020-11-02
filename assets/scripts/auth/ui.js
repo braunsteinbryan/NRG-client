@@ -26,6 +26,9 @@ const onSignInSuccess = function (response) {
   $('#sign-out-link').show()
   favoritesSelectionEvents.onShowLocalDrinks()
   $('#nav').show()
+  $('.container').show()
+  $('#show-favorites').show()
+  $('#favorites-list').show()
 }
 
 const onSignInFailure = function (error) {
